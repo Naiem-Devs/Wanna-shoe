@@ -1,0 +1,962 @@
+/*   Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+@font-face {
+  font-family: "Suisse Intl"; 
+  src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); 
+  src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg"); 
+}
+body {
+  font-family: "Suisse Intl"; 
+  font-weight: 400; 
+  color: #fff;
+  background: #000000;
+  font-size: 16px;
+  position: relative;
+}
+
+  
+button {
+  cursor: pointer; }
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+a,
+button {
+  color: inherit;
+  outline: medium none; }
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
+img,video{
+  max-width: 100%;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Suisse Intl"; 
+  color: #fff;
+  margin-top: 0px; 
+  font-weight: 500;
+  text-transform: normal;
+ }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+ .padding{
+   padding-right: 0;
+ }
+
+ a{
+  text-decoration: none;
+ }
+
+.container{
+  max-width: 1200px;
+}
+
+
+
+
+
+
+ 
+/* default-css END 
+================================== */
+ 
+
+
+ 
+header {
+  position: relative;
+}
+.header-top {
+  padding: 28px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: .3s;
+}
+
+.sneakers_hdr {
+    display: ;
+}
+.header-top.fixed {
+  position: fixed;
+}
+body.siteBar:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 2;
+  opacity: .6;
+}
+.header-top.fixed .hcontent-wrp ul.menu-area {
+  display: none;
+}
+
+.header-top.fixed .hcontent-wrp  .bar {
+  display: block;
+}
+.header-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.header-wrp a.logo-area {
+  display: block;
+  width: max-content;
+}
+.hcontent-wrp .bar{
+  display: none;
+}
+.header-wrp a.logo-area img {
+  display: block;
+  width: 90px;
+  height: auto;
+}
+
+.hcontent-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrp ul.menu-area {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrp ul.menu-area  > li {
+  padding: 0 50px;
+  font-weight: 600;
+}
+.header-wrp ul.menu-area  > li:last-child{
+  padding-right: 0;
+}
+
+
+
+/* humbergar */
+.bar a {
+  width: 35px;
+  height: 35px;
+  float: right;
+  position: relative;
+} 
+.bar a span {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  display: block;
+  position: relative;
+  top: 17px; 
+  transition: .3s;
+} 
+.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: 8px;transition: .3s;} 
+.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: -8px;transition: .3s;}
+ 
+/* humbarger END */
+ 
+
+/* mobile-menu START */
+.mobile-menu {
+  position: fixed;
+  width: 260px;
+  height: 100vh;
+  background: #111;
+  z-index: 99; 
+  top: 0;
+  right: 0;
+  transition: .3s;
+  margin-right: -400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-bottom: 50px; 
+}
+.siteBar .mobile-menu{
+  margin-right: 0; 
+}
+.mobile-menu a.bars {    
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  line-height: initial;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #fff; 
+  padding: 0;
+  line-height: 0;
+}
+.mobile-menu ul li a {
+  font-size: 24px;
+  margin-bottom: 5px;
+  display: block;
+}
+.mobile-menu p {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.social a {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+
+/* Mobile menu area */
+
+
+
+.header-middle {
+  position: relative;
+}
+
+.header-middle > video {
+  height: 100vh;
+  margin: auto;
+  width: auto;
+  display: block;
+}
+
+.header-bottom-wrp {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: max-content;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-bottom-wrp {}
+.header-bottom-wrp a {
+  margin: 0 5px;
+}
+
+
+.header-bottom-wrp a {
+  margin: 0 5px;
+}
+
+.header-bottom {
+  display: block;
+  margin: -100px 0;
+  position: relative;
+  z-index: -1;
+}
+
+.header-bottom video {
+  display: block;
+  width: 100%;
+}
+
+
+.sneakers_hdr{
+  display: none;
+  margin: 100px 0;
+}
+
+.sneakers_hd_cont {
+    margin: auto;
+    border-radius: 50px;
+    color: #000;
+    margin-top: 45px;
+    padding-top: 22px;
+    background-position: center center;
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    max-width: 650px;
+}
+
+.sneakers_hd_cont {}
+
+.sneakers_hd_cont img {
+    max-width: 640px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sneakers_hd_cont p {
+    margin-bottom: 0;
+}
+
+.sneakers_hdr p {font-size: 50px;max-width: 620px;margin: auto;line-height: 1;}
+
+
+
+
+
+
+
+
+/* Header section END Revolutionizing-area START*/
+
+
+
+
+
+
+
+.revolutionizing-area {
+  position: relative;
+  z-index: 2;
+}
+.revolutionizing-area .container {
+  max-width: 1200px;
+}
+.title {
+  max-width: 865px;
+  margin: auto;
+}
+
+.title h2 {
+  line-height: 72px;
+  font-size: 72px;
+}
+.revolutionizing-wrp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.rvBlk {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Arial',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+  padding: 15px 40px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  width: 35%;
+  transition: .3s;
+}
+.rvBlk:hover{
+  background-color: #deff1d;
+}
+.rvBlk h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  font-size: 150px;
+  line-height: 1;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.rvBlk img {
+  height: 115px;
+}
+
+.rvBlk-wrp {
+  padding-top: 60px;
+  margin-top: 70px;
+  border-top: 2px solid #00000052;
+}
+.rvBlk-wrp h3 {
+  color: #000000;
+  font-size: 40px;
+  font-family: 'SuisseIntl',Arial,sans-serif;
+  line-height: 40px;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.rvBlk-wrp p {
+  color: #000000;
+  font-size: 20px;
+  font-family: 'SuisseIntl',Arial,sans-serif;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 120px;
+}
+.revolutionizing-area .container {
+  max-width: 1170px;
+}
+
+.revolutionizing-wrp > img {
+  max-height: 580px;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.itm1 { grid-area: itm1; }
+.itm2 { grid-area: itm2; }
+.itm_img { grid-area: itm_img; }
+
+.mdiv{
+  display: none;
+}
+
+/* Revolutionizing-area END insights-area START*/
+
+
+
+.insights-area{
+  margin: 200px 0;
+}
+
+.insights-wrp {
+  position: relative;
+  margin: 30px 0;
+}
+
+.insights-wrp a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 32px;
+  background-color: #a5eeff;
+  padding: 15px;
+}
+
+.insights-wrp a .insLeft {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.insights-wrp a .insLeft img {
+  max-height: 120px;
+}
+
+.insights-wrp a  h5 {
+  font-size: 32px;
+  color: #000;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.insBlk {
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.insBlk h4 {
+  margin-top: auto;
+  text-align: left;
+  color: #000000;
+  font-size: 42px;
+  font-family: 'SuisseIntl',Arial,sans-serif;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.insBlk > div {
+  text-align: left;
+  padding: 0px 40px;
+  padding-bottom: 25px;
+}
+
+.insBlk video {
+  max-height: 370px;
+  margin: 50px auto;
+}
+
+.insBlk > div p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px; 
+}
+
+.insBlk > div a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.insBlk > div a img {
+  margin-left: 5px;
+}
+
+
+
+
+
+/* insights-area END trusted-area START*/
+
+
+
+
+.partners-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.partners-wrp a {
+  display: block;
+  max-width: 15%;
+  margin: 12px 12px;
+}
+.partners-wrp a img {
+  display: block;
+  height: 144px;
+  width: 144px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mdi_wrp {display: none;overflow: auto;}
+
+.sld_btn {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+.mdi_blk {max-width: 250px;border-radius: 20px;overflow: hidden;background: #fff;color: #000;flex-shrink: 0;margin-left: 20px;}
+
+.mdi_blk {}
+.imd_text {padding: 20px;}
+
+.imd_text p {
+    margin-bottom: 0;
+}
+
+.imd_text h6 {
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+    color: #000;
+}
+
+/* trusted-area END whywanna-area START*/
+
+ 
+
+
+
+.whywanna-area {
+  margin: 50px 0;
+  padding: 100px 0;
+  background: url(../img/The-Nike-Kyrie-3-Mar.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+}
+.whywanna-area .title {
+  margin-bottom: 80px;
+}
+.whywanna-area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, black, #00000054, black);
+  z-index: -1;
+}
+
+.wwblk {
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: #000;
+  margin-bottom: 30px;
+  transition: .2s;
+}
+
+.wwblk h4 {
+  color: #000000;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wwblk h4 {}
+
+.wwblk p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.wwblk:hover {
+  background-color: #deff1d;
+}
+
+
+
+
+
+/* whywanna-area END About-area START*/
+
+
+
+
+
+
+
+.profBlk {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: .3s;
+  padding: 25px;
+  margin: 15px 0;
+}
+
+.profBlk > img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.profBlk a {
+  padding-top: 20px;
+  display: block;
+  color: #000;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.profBlk a h4 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.profBlk a h4 img {
+  max-width: 30px;
+}
+
+.profBlk:hover {
+  background-color: #deff1d;
+}
+
+.profBlk a p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.aboutus-area .title {
+  margin-bottom: 80px;
+}
+
+
+.wanna_accordian .accordion-button{
+    background: no-repeat;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 0;
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    transition: .3s;
+}
+
+.wanna_accordian .accordion-button i img {
+    font-size: 20px;
+    width: 40px;
+    filter: invert(1);
+    margin-left: auto;
+    transition: .3s;
+}
+
+.wanna_accordian .accordion-button i img {
+    filter: unset;
+    transition: .3s;
+}
+
+.wanna_accordian .accordion-button i {
+    display: block;
+    float: right;
+    /* margin-left: auto; */
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DEFF1D;
+    transform: rotate(45deg);
+    transition: .3s;
+}
+.wanna_accordian .accordion-body{
+    padding: 0;
+}
+
+.wanna_accordian .accordion-body i {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.wanna_accordian .accordion-body p {
+    color: rgb(196, 196, 196) !important;
+    line-height: 1.3;
+}
+
+.wanna_accordian .accordion-body p span {
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    display: block;
+}
+.wanna_accordian .accordion-item{
+    border-bottom: 1px solid rgb(255 255 255 / 51%);
+}
+.wanna_accordian .accordion-button.collapsed i{background: #deff1d00;/* opacity: 1; */transform: unset;}
+
+.wanna_accordian .accordion-button.collapsed i img {
+    filter: invert(1);
+    opacity: .6;
+}
+.wanna_accordian{}
+
+/* About-area END experinces-area START*/
+
+
+
+
+
+.experinces-area {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.experinces-area > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.experinces-area:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #00000045, #0000003d,black); 
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.exp-wrp {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.exp-wrp h1 {
+  font-size: 102px;
+  line-height: 90px;
+}
+
+
+
+
+/* experinces-area END contact-area START*/
+ 
+
+ 
+
+
+
+.contact-area {
+  padding: 100px 0;
+  padding-top: 200px;
+}
+
+.contact-left h1 {
+  font-size: 72px;
+}
+
+.contactform {
+  display: block;
+}
+
+.contactform button {margin: unset;margin-bottom: 30px;margin-top: 30px;}
+
+form {
+  position: relative;
+}
+
+input,select,textarea {
+  height: 50px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  display: block;
+  width: 100%;
+  background: none;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  color: #000000;
+  background-color: #deff1d;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0px 15px;
+  display: block;
+  width: 160px;
+  font-weight: 600;
+  height: 50px;
+  margin: 15px 0;
+}
+
+form p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  margin: 0;
+}
+
+form p a {
+  color: rgb(222, 255, 29);
+  text-decoration: underline;
+}
+
+
+
+/* experinces-area END contact-area START*/
+
+
+
+
+.footer-widgets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.singleWidgetBlk {
+  margin-bottom: 40px;
+}
+
+.singleWidgetBlk h6 {
+  color: #ffffff;
+  opacity: .6;
+  margin-top: 10px;
+}
+
+.singleWidgetBlk ul li {
+  display: block;
+}
+
+.singleWidgetBlk ul li a {
+  font-size: 14px;
+  opacity: .6;
+  display: flex;
+  align-items: center;
+}
+
+.singleWidgetBlk ul li a img {
+  max-height: 15px;
+  margin-right: 5px;
+}
+
+
+
+.footer_mobile {text-align: center;}
+
+.footer_mobile span {
+    color: rgb(255 255 255 / 80%);
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer_mobile span a {
+    display: block;
+    font-size: 26px;
+    color: #deff1d;
+}
+.footer_mobile_link {display: flex;justify-content: center;flex-wrap: wrap;}
+
+.footer_mobile_link a {
+    display: inline-block;
+    color: #a5a5a5;
+    margin: 15px;
+    font-size: 18px;
+}

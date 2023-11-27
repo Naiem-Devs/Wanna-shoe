@@ -1,0 +1,579 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .header-bottom-wrp { 
+        bottom: 8%; 
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .header-bottom-wrp { 
+        bottom: 8%; 
+    }
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .aboutus-area {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .header-wrp ul.menu-area {
+        display: none;
+    }
+    
+    .hcontent-wrp .bar {
+        display: block;
+    }
+    
+    .header-wrp {
+        padding: 0;
+    }
+    .header-bottom {
+        margin: 0;
+        margin-top: -100px;
+    }
+
+.header-bottom video {
+    display: none;
+}
+    
+    .title h2 {
+        line-height: 56px;
+        font-size: 56px;
+    }
+    
+    .rvBlk h1 {
+        font-size: 72px;
+    }
+    
+    .rvBlk {
+        padding: 12px 15px;
+        border-radius: 20px;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .rvBlk img {
+        height: 55px;
+    }
+    
+    .rvBlk-wrp {
+        padding-top: 21px;
+        margin-top: 10px;
+    }
+    
+    .rvBlk-wrp h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .rvBlk-wrp p {
+        font-size: 18px;
+        margin-top: 35px;
+        color: #585858;
+    }
+    
+    .revolutionizing-wrp > img {
+        max-height: 610px;
+        /* height: 555px; */
+    }
+    
+    .revolutionizing-wrp {
+        max-width: 640px;
+        margin: 65px auto 0;
+    }
+    
+    .insights-area {
+        margin: 119px 0;
+    }
+    
+    .insBlk {
+        border-radius: 15px;
+    }
+    
+    .insBlk video {
+        max-height: 200px;
+        margin: 25px auto;
+    }
+    
+    .insBlk > div {
+        padding: 0px 20px;
+        padding-bottom: 20px;
+    }
+    
+    .insBlk h4 {
+        font-size: 31px;
+    }
+    
+    .insBlk > div p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .insights-wrp a h5 {
+        /* font-size: 25px; */
+        margin-left: 20px;
+    }
+    
+    .insights-wrp a .insLeft img {
+        max-height: 90px;
+    }
+    
+    .insights-wrp a > img {
+        max-height: 65px;
+        display: none;
+    }
+    
+    .partners-wrp a {
+        max-width: 20%;
+        margin: 10px 10px;
+    }
+    
+    .partners-wrp a img {
+        height: 120px;
+        width: 160px;
+    }
+    
+    .partners-wrp {
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .whywanna-area {
+        margin: 0px 0;
+    }
+    
+    .exp-wrp h1 {
+        font-size: 55px;
+        color: #000;
+        padding: 30px;
+        line-height: 1;
+    }
+    
+    .contact-area {
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    button {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    .contact-area {
+        padding-bottom: 70px;
+    }
+    .container{
+    max-width: 630px;
+}
+
+
+    .sneakers_hdr{
+    display: block;
+}
+    .insights-wrp {
+        max-width: 570px;
+        margin: 50px auto;
+    }
+    .insBlkwrp{
+    display: none;
+}
+.mdi_wrp {
+    display: flex;
+}
+
+.sld_btn {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'itm1 itm_img '
+      'itm2 itm_img ';
+    gap: 10px;
+    padding: 10px;
+  }
+.profBlk a p{
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+
+.profBlk a h4 img {
+    width: 17px;
+}
+
+.profBlk > img {
+    height: 130px;
+    object-fit: cover;
+}
+
+.profBlk.profBlk_lg br {
+    display: none;
+}
+
+.profBlk.profBlk_lg h4 {
+    font-size: 35px;
+}
+
+.profBlk.profBlk_lg > img {
+    height: 300px;
+    object-fit: cover;
+}
+.profBlk a h4{
+    font-size: 18px;
+}
+.exp-wrp {
+    padding: 30px;
+    background: #deff1d;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.contact-left h1 {
+    text-align: left;
+}
+
+.contactform button {
+    margin: 25px 0;
+}
+.wwblk h4 {
+    font-size: 28px;
+}
+
+.wwblk p {
+    font-size: 17px;
+    height: 90px;
+}
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .header-top {
+        padding: 7px 0;
+        background: #000;
+        z-index: 99;
+    }
+    .aboutus-area {
+        position: relative;
+        z-index: 2;
+    }
+
+.aboutus-area .title h2 {
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-bottom: 40px;
+}
+    
+    .header-wrp ul.menu-area {
+        display: none;
+    }
+    
+    .hcontent-wrp .bar {
+        display: block;
+    }
+    
+    .header-wrp {
+        padding: 0;
+    }
+    .header-bottom {
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+    .title h2 {
+        line-height: 32px;
+        font-size: 40px;
+    }
+    
+    .rvBlk h1 {
+        font-size: 30px;
+    }
+    
+    .rvBlk {
+        padding: 12px 15px;
+        border-radius: 20px;
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    
+    .rvBlk img {
+        height: 30px;
+    }
+    
+    .rvBlk-wrp {
+        padding-top: 16px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+    }
+    
+    .rvBlk-wrp h3 {
+        font-size: 22px;
+        line-height: 1;
+    }
+    
+    .rvBlk-wrp p {
+        font-size: 13px;
+        margin-top: 0;
+        line-height: 1;
+    }
+    
+    .revolutionizing-wrp > img {
+        max-height: 773px;
+        display: block;
+        margin: auto;
+        border: none;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .revolutionizing-wrp {
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .insights-area {
+        margin: 70px 0;
+    }
+    
+    .insBlk {
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .insBlk video {
+        max-height: 200px;
+        margin: 25px auto;
+    }
+    
+    .insBlk > div {
+        padding: 0px 20px;
+        padding-bottom: 20px;
+    }
+    
+    .insBlk h4 {
+        font-size: 31px;
+    }
+    
+    .insBlk > div p {
+        max-height: 90px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .insights-wrp a h5 {
+        font-size: 30px;
+        margin-left: 0px;
+        text-align: left;
+    }
+    
+    .insights-wrp a .insLeft img {
+        max-height: 217px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 100%;
+        object-fit: unset;
+        display: none;
+    }
+    .insights-wrp a {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .insights-wrp a .insLeft {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .insights-wrp a > img {
+        max-height: 50px;
+        display: block;
+        margin: auto;
+        margin-bottom: -5px;
+        display: none;
+    }
+    
+    .partners-wrp a {
+        max-width: 48%;
+        margin: 3px 3px;
+    }
+    
+    .partners-wrp a img {
+        height: 85px;
+        width: 80px;
+    }
+    
+    .partners-wrp {
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .header-bottom-wrp a img {
+        max-width: 130px;
+    }
+    .whywanna-area {
+        margin: 0px 0;
+        padding: 60px 0;
+    }
+
+.whywanna-area .title h2 {
+    text-align: left;
+}
+    .whywanna-area .title {
+        margin-bottom: 40px;
+    }
+    .exp-wrp h1 {
+        font-size: 28px;
+        line-height: 36px;
+        color: #000;
+    }
+    .wwblk h4 {
+        font-size: 32px;
+    }
+    .aboutus-area .title {
+        margin-bottom: 15px;
+    }
+    .contact-area {
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    button {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    .contact-area {
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+    .footer-widgets{
+        flex-wrap: wrap;
+    }
+    .contact-left h1 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .singleWidgetBlk {
+        margin-bottom: 20px;
+        width: 49%;
+    }
+
+    .bar a span { 
+        transform: scale(.7);
+    }
+    .header-wrp a.logo-area {
+        display: block;
+        width: 60px;
+    }
+    .header-middle > video {
+        height: auto;
+        margin: auto;
+        width: 100%;
+        display: block;
+        padding-top: 110px;
+        object-fit: cover;
+        min-height: 465px;
+    }
+
+    .header-bottom-wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        bottom: -10%;
+    }
+    .bar a {
+        width: 30px; 
+    }
+    .header-bottom-wrp a {
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .sneakers_hdr{
+        display: block;
+        max-width: 350px;
+        margin: 149px auto 50px;
+    }
+        .insights-wrp {
+            max-width: 570px;
+            margin: 50px auto;
+        }
+        .insBlkwrp{
+        display: none;
+    }
+    .mdi_wrp {
+        display: flex;
+    }
+    
+    .sld_btn {
+        display: block;
+    }
+    .header-bottom video{
+    display: none;
+}
+.sneakers_hdr p {
+    font-size: 30px;
+}
+
+.sneakers_hd_cont {
+    padding: 30px 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+img.mdiv{
+    display: block !important;
+  }
+  .trusted-area .title h2 {
+    text-align: left;
+}
+
+.wwblk p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: #6e6e6e;
+}
+.exp-wrp {
+    padding: 30px;
+    background: #deff1d;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin: 100px 0 0;
+}
+.contact-left {
+    text-align: left;
+}
+
+form p {
+    font-size: 16px;
+    text-align: left;
+}
+footer {border-top: 5px solid #1A1A1A;padding-top: 40px;padding-bottom: 20px;}
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
